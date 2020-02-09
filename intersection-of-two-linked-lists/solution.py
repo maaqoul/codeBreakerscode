@@ -6,12 +6,16 @@
 
 # a pseudo algorithm would be :
 #  while A has value:
-#    while B has value:
-#       if  A.value equal B.value
-#           return value of intersection
+#    add A values to a stack
+#  while B has value:
+#     if  A.value exist in the stack
+#       return value of intersection
 
+# ps : stack toke too much time so i used a set instead after looking in google
 
 # Definition for singly-linked list.
+
+
 class ListNode:
     def __init__(self, x):
         self.val = x
